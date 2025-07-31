@@ -8,7 +8,7 @@
       elevation="0"
     >
       <div
-        class="d-flex mx-10 flex-row w-100 align-center justify-space-between"
+        class="d-flex mx-3 mx-sm-10 flex-row w-100 align-center justify-space-between"
       >
         <div class="d-flex align-center justify-center">
           <v-img class="logo" src="/logo.svg" width="70" height="70" />
@@ -97,7 +97,7 @@ const handleSearch = async () => {
   //fetch searching results
   try {
     const data = await $fetch<Chair[]>(
-      `http://localhost:3000/api/chairs/search`, //it shold be edited when deploy
+      `https://seatrix.vercel.app/api/chairs/search`, //it shold be edited when deploy
       {
         params: { title: query.value },
       }
