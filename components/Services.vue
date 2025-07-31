@@ -1,4 +1,5 @@
 <template>
+  <slide-section>
   <div class="services">
     <SectionTitle title="Services" />
     <v-container>
@@ -30,6 +31,7 @@
       </v-row>
     </v-container>
   </div>
+    </slide-section>
 </template>
 <script setup>
 const services = [
