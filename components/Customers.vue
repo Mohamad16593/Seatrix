@@ -1,5 +1,5 @@
 <template>
-  
+  <slide-section>
   <div class="customers mb-16 sec">
     <SectionTitle title="Testimonals" />
     <v-container fluid>
@@ -26,6 +26,7 @@
       </v-row>
     </v-container>
   </div>
+    </slide-section>
 </template>
 <script setup>
 const testies = [
