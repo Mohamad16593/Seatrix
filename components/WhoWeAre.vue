@@ -1,4 +1,5 @@
 <template>
+  <slide-section>
   <div class="wwa">
     <SectionTitle title="Who We Are" />
     <v-container>
@@ -26,6 +27,7 @@
       </v-row>
     </v-container>
   </div>
+    </slide-section>
 </template>
 <script setup></script>
 <style>
