@@ -9,13 +9,17 @@ export default defineEventHandler(async (event) => {
     return chairs;
   } catch (err) {
     console.error("API error:", err);
+    console.log("Mongo URI:", process.env.NUXT_MONGODB_URI);
+console.log("DB Name:", process.env.NUXT_MONGODB_DB); 
     return createError({
       statusCode: 500,
       statusMessage: "Failed to fetch chairs",
     });
-  console.log("Mongo URI:", process.env.NUXT_MONGODB_URI);
-console.log("DB Name:", process.env.NUXT_MONGODB_DB);  
+   
   }
   
 });
+export const config = {
+  runtime: 'nodejs',
+}
 
