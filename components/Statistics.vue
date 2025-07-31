@@ -1,4 +1,5 @@
 <template>
+  <slide-section>
   <div class="statistics-section">
     <SectionTitle title="Our Statistics" />
     <v-row>
@@ -47,6 +48,7 @@
       </v-col>
     </v-row>
   </div>
+    </slide-section>
 </template>
 
 <script setup>
