@@ -1,4 +1,5 @@
 <template>
+  <slide-section>
   <div>
     <SectionTitle title="Seatronix On Map" />
     <v-container class="mb-16">
@@ -11,6 +12,7 @@
       </v-row>
     </v-container>
   </div>
+    </slide-section>
 </template>
 <script setup>
 import "leaflet/dist/leaflet.css";
