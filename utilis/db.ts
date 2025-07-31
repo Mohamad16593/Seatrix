@@ -10,7 +10,7 @@ let cachedDb: Db | null = null;
 export async function getDb() {
   if (!cachedDb) {
     await client.connect("chairs_db");
-    cachedDb = client.db(dbName);
+    cachedDb = client.db(" chairs_db");
   }
   return cachedDb;
 }
