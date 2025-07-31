@@ -64,6 +64,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+  import ScrollTrigger from "gsap/ScrollTrigger";
 
 //store config
 import { useChairsStore } from "~/stores/product";
@@ -75,6 +76,7 @@ const props = defineProps({
 const store = useChairsStore();
 onMounted(async () => {
   await store.fetchChairsByCategory(props.category);
+  ScrollTrigger.refresh();
 });
 
 const chairs = computed(() => store.chairsByCategory[props.category] || []);
