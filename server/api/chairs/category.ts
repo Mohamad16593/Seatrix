@@ -13,5 +13,9 @@ export default defineEventHandler(async (event) => {
       statusCode: 500,
       statusMessage: "Failed to fetch chairs",
     });
+  console.log("Mongo URI:", process.env.NUXT_MONGODB_URI);
+console.log("DB Name:", process.env.NUXT_MONGODB_DB);  
   }
+  
 });
+
