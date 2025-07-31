@@ -29,11 +29,7 @@ export const useChairsStore = defineStore("product", () => {
       // console.log("API response for category:", category, data);
       chairsByCategory.value[category] = data ?? [];
     } catch (err) {
-      console.error("API error:", err);
-    return createError({
-      statusCode: 500,
-      statusMessage: "Failed to fetch chairs",
-    });
+      console.error("Failed to fetch category chairs:", err);
       chairsByCategory.value[category] = [];
     }
   }
