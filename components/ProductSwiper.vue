@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <div v-if="chairs.length">
+    <div>
       <Swiper
         class="py-5 bg-background"
         :modules="[Autoplay]"
